@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<AnchorPane prefHeight="391.0" prefWidth="239.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.simoneifp.App">
+   <children>
+      <Pane prefHeight="386.0" prefWidth="239.0">
+         <children>
+            <Label layoutX="18.0" layoutY="14.0" text="Title" />
+            <TextField id="rec_title" fx:id="rec_title" layoutX="16.0" layoutY="31.0" prefHeight="25.0" prefWidth="199.0" />
+            <TextArea id="rec_content" fx:id="rec_content" layoutX="18.0" layoutY="161.0" prefHeight="174.0" prefWidth="200.0" />
+            <Label layoutX="17.0" layoutY="143.0" text="Body" />
+            <Button layoutX="14.0" layoutY="342.0" mnemonicParsing="false" onAction="#rec_cancel" text="Cancel" />
+            <Button layoutX="163.0" layoutY="342.0" mnemonicParsing="false" onAction="#rec_create" text="Create" />
+            <Label layoutX="18.0" layoutY="57.0" text="Secondary Title" />
+            <TextField id="rec_title_two" fx:id="rec_title_two" layoutX="16.0" layoutY="75.0" prefHeight="25.0" prefWidth="199.0" />
+            <ComboBox id="rec_type" fx:id="rec_type" layoutX="16.0" layoutY="117.0" prefWidth="150.0" >
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Medical"/>
+                  <String fx:value="Education"/>
+                  <String fx:value="Other"/>
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label layoutX="15.0" layoutY="101.0" text="Category" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

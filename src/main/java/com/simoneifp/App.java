@@ -194,6 +194,7 @@ public class App extends Application
             Recommendation rec = new Recommendation();
             rec.setTitle(title);
             rec.setSecondary(title2);
+            rec.setArchived(false);
             com.simoneifp.Category type;
             if(cat.equals("Medical")){
                 type = com.simoneifp.Category.MEDICAL;
